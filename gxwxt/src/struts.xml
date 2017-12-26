@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC   
+     "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"   
+     "http://struts.apache.org/dtds/struts-2.0.dtd">
+     
+<struts>
+    <package name="liu" extends="struts-default">
+        <global-results>
+            <result name="succeed">/common/succeed.jsp</result>
+            <result name="msg">/common/msg.jsp</result>
+        </global-results>
+        
+        <action name="upload" class="com.util.upload" method="upload">
+             <result name="success">/upload/upload_re.jsp</result>
+        </action>
+        
+        <action name="userAdd" class="userAction" method="userAdd">
+        </action>
+        <action name="userMana" class="userAction" method="userMana">
+             <result name="success">/admin/user/userMana.jsp</result>
+        </action>
+        <action name="userDel" class="userAction" method="userDel">
+        </action>
+        <action name="userAll" class="userAction" method="userAll">
+             <result name="success">/admin/user/userAll.jsp</result>
+        </action>
+        
+        <action name="userEditMe" class="userAction" method="userEditMe">
+        </action>
+        
+        <action name="banjiAdd" class="banjiAction" method="banjiAdd">
+        </action>
+        <action name="banjiMana" class="banjiAction" method="banjiMana">
+             <result name="success">/admin/banji/banjiMana.jsp</result>
+        </action>
+        <action name="banjiDel" class="banjiAction" method="banjiDel">
+        </action>
+        <action name="banjiPre" class="banjiAction" method="banjiPre">
+             <result name="success">/admin/banji/banjiPre.jsp</result>
+        </action>
+        <action name="banjiEdit" class="banjiAction" method="banjiEdit">
+        </action>
+        <action name="banjiEditMe" class="banjiAction" method="banjiEditMe">
+        </action>
+        
+        <action name="kechengAdd" class="kechengAction" method="kechengAdd">
+        </action>
+        <action name="kechengMana" class="kechengAction" method="kechengMana">
+             <result name="success">/admin/kecheng/kechengMana.jsp</result>
+        </action>
+        <action name="kechengDel" class="kechengAction" method="kechengDel">
+        </action>
+        <action name="kechengAll" class="kechengAction" method="kechengAll">
+             <result name="success">/admin/kecheng/kechengAll.jsp</result>
+        </action>
+        
+        <action name="chengjiAdd" class="chengjiAction" method="chengjiAdd">
+        </action>
+        <action name="chengjiMana" class="chengjiAction" method="chengjiMana">
+             <result name="success">/admin/chengji/chengjiMana.jsp</result>
+        </action>
+        <action name="chengjiDel" class="chengjiAction" method="chengjiDel">
+        </action>
+        <action name="chengjiEdit" class="chengjiAction" method="chengjiEdit">
+        </action>
+        <action name="chengjiMine" class="chengjiAction" method="chengjiMine">
+             <result name="success">/admin/chengji/chengjiMine.jsp</result>
+        </action>
+        <action name="chengjiTongji" class="chengjiAction" method="chengjiTongji">
+             <result name="success">/admin/chengji/chengjiTongji.jsp</result>
+        </action>
+        
+        <action name="chengjiTongji1" class="chengjiAction" method="chengjiTongji1">
+             <result name="success">/admin/chengji/chengjiTongji1.jsp</result>
+        </action>
+          
+        <action name="laoshiAdd" class="laoshiAction" method="laoshiAdd">
+        </action>
+        <action name="laoshiMana" class="laoshiAction" method="laoshiMana">
+             <result name="success">/admin/laoshi/laoshiMana.jsp</result>
+        </action>
+        <action name="laoshiDel" class="laoshiAction" method="laoshiDel">
+        </action>
+        <action name="laoshiPre" class="laoshiAction" method="laoshiPre">
+             <result name="success">/admin/laoshi/laoshiPre.jsp</result>
+        </action>
+        <action name="laoshiEdit" class="laoshiAction" method="laoshiEdit">
+        </action>
+        <action name="laoshiAll" class="laoshiAction" method="laoshiAll">
+             <result name="success">/admin/laoshi/laoshiAll.jsp</result>
+        </action>
+        <action name="laoshiEditMe" class="laoshiAction" method="laoshiEditMe">
+        </action>
+        
+        <action name="gonggaoAdd" class="gonggaoAction" method="gonggaoAdd">
+        </action>
+        <action name="gonggaoMana" class="gonggaoAction" method="gonggaoMana">
+            <result>/admin/gonggao/gonggaoMana.jsp</result>
+        </action>
+        <action name="gonggaoDel" class="gonggaoAction" method="gonggaoDel">
+        </action>
+        <action name="gonggaoDetail" class="gonggaoAction" method="gonggaoDetail">
+            <result>/admin/gonggao/gonggaoDetail.jsp</result>
+        </action>
+        <action name="gonggaoAll" class="gonggaoAction" method="gonggaoAll">
+            <result>/admin/gonggao/gonggaoAll.jsp</result>
+        </action>
+    </package>
+</struts>
